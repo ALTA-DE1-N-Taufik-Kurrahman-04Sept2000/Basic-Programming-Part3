@@ -1,5 +1,10 @@
 def palindrome(input_string):
-    return 'error response'
+  # Ubah string menjadi huruf kecil
+  input_string = input_string.lower()
+  # Hapus spasi dan tanda baca jika ada
+  input_string = "".join(c for c in input_string if c.isalnum())
+  # Bandingkan string dengan kebalikannya
+  return input_string == input_string[::-1]
 
 
 if __name__ == '__main__':

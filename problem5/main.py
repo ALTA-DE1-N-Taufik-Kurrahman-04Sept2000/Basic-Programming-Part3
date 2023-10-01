@@ -1,7 +1,12 @@
 def pangkat(base, pangkat):
-    # your code here
-    return 'error response'
-
+  # inisialisasi hasil
+  result = 1
+  # perulangan
+  for i in range(pangkat):
+    # kalikan hasil dengan base
+    result = result * base
+  # kembalikan hasil
+  return result
 
 if __name__ == '__main__':
     print(pangkat(2, 3)) # 8
